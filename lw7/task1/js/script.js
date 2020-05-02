@@ -1,9 +1,9 @@
 function isPrimeNumber(number) {
   let isPrime = true;
   if (typeof(number) == 'number') {
-	if (number % 1 !== 0) {
+    if (number % 1 !== 0) {
 	  isPrime = false;
-	}
+    }
     for (let j = 2; j < number; j++) {
       if (number % j == 0) {
         isPrime = false;
@@ -20,6 +20,6 @@ function isPrimeNumber(number) {
         isPrimeNumber(number[i]);
       }   
   } else {
-	  console.log('Incorrect type of data');
+      console.log('Incorrect type of data');
   }
 }
